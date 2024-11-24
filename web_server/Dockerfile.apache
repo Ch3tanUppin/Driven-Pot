@@ -1,3 +1,4 @@
 FROM httpd:latest
 
+# Copy the index.html file to the Apache document root
 COPY ./web_server/index.html /usr/local/apache2/htdocs/
