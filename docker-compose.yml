@@ -6,8 +6,6 @@ services:
     build:
       context: .
       dockerfile: ./attacker/Dockerfile.attacker
-    extra_hosts:
-      - "www.rebel-alliance.com:192.168.100.1"
     networks:
       external_network:
         ipv4_address: 192.168.100.2
